@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
+      type="module"
+      src="./app.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./main.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Jolly+Lodger&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inlämning 2</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <img
+            src="assets/IMG_0446.png"
+            alt="Nisse"
+            id="logo"
+          />
+        </div>
+        <div>
+          <p id="nisse">Nisses</p>
+          <p id="pengisar">Pengisar</p>
+        </div>
+      </header>
+      <div class="container">
+        <h3>Check Balance</h3>
+        <input
+          type="text"
+          id="account"
+          placeholder="Account address"
+        />
+        <button
+          id="checkBalance"
+          class="btn"
+        >
+          Check balance
+        </button>
+        <ul>
+          <li
+            id="eth"
+            class="hide"
+          >
+            ETH:
+          </li>
+          <li id="balance"></li>
+        </ul>
+      </div>
+      <div
+        class="container"
+        id="send"
+      >
+        <h3>Make a Transaction</h3>
+        <input
+          type="text"
+          id="amount"
+          placeholder="Value"
+        />
+        <input
+          type="text"
+          id="toAccount"
+          placeholder="Reciever address"
+        />
+        <button
+          id="sendTrxBtn"
+          class="btn"
+        >
+          Send
+        </button>
+      </div>
+      <div
+        class="container"
+        id="blocksContainer"
+      >
+        <h3>Show the number of blocks</h3>
+        <button
+          id="displayNumberOfBlocks"
+          class="btn"
+        >
+          Show number of blocks
+        </button>
+        <ul>
+          <li
+            id="blocks"
+            class="hide"
+          >
+            Number of blocks:
+          </li>
+          <li id="numberOfBlocks"></li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">Nisses Pengisar &copy 2024</div>
+    </footer>
+  </body>
+</html>
